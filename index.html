@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Advice Generator</title>
+  </head>
+  <body class="flex items-center justify-center h-dvh bg-[#202632]">
+    <div class="w-96 lg:w-[30rem] p-8 lg:p-14 rounded-2xl bg-[#313a49] relative">
+      <div>
+        <h3
+          class="text-center text-sm font-medium tracking-widest text-[#52ffa9] uppercase"
+        >
+          advice #<span id="advice-number"></span>
+        </h3>
+        <p class="text-[#cee3e9] text-[28px] font-extrabold my-6 text-center relative">
+          <span class="biz-udpgothic-regular text-4xl scale-x-[-1] inline-block relative -bottom-2.5">"</span
+          ><span class="w-fit advice-text"></span
+          ><span class="biz-udpgothic-regular rotate-180 text-4xl relative -bottom-2.5">"</span>
+        </p>
+      </div>
+      <div class="my-8 lg:my-3">
+        <img
+          class="w-full h-full object-cover"
+          src="images/pattern-divider-desktop.svg"
+          srcset="
+            images/pattern-divider-mobile.svg  375w,
+            images/pattern-divider-desktop.svg 768w
+          "
+          sizes="(max-width: 767px) 100vw, 100vw"
+          alt="Pattern divider"
+        />
+      </div>
+      <button
+        class="bg-[#52ffa9] w-16 h-16 rounded-full overflow-hidden flex items-center justify-center absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 cursor-pointer hover:shadow-[0px_0px_35px_0px_#52ffa9] transition-shadow"
+      >
+        <img src="images/icon-dice.svg" alt="Icon dice" />
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
